@@ -1,10 +1,5 @@
 #!/bin/bash
 
-
-#build the dot net service
-echo 'DOTNET_CLI_HOME=/temp' >> /etc/environment
-export DOTNET_CLI_HOME=/temp
-
 cat >/etc/systemd/system/http_server.service <<EOL
 [Unit]
 Description=.NET HTTP Server Work on Port 8002
