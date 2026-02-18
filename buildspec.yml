@@ -5,6 +5,9 @@ phases:
       dotnet: 8.0
   build:
     commands:
+      - echo "--- Listing files in current directory ---"
+      - ls -R
+      - echo "--- Starting Publish ---"
       - dotnet publish -c Release --self-contained=false --runtime linux-x64
 artifacts:
   files:
