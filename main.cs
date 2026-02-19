@@ -37,7 +37,7 @@ class Program
                 Console.WriteLine(i);
                 Console.WriteLine(s3_facts[i]);
 
-                byte[] buffer = System.Text.Encoding.UTF8.GetBytes( DateTime.Now.TimeOfDay + " - V2 -" + s3_facts[i] );
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes( DateTime.Now.TimeOfDay + " - V2 - " + s3_facts[i] );
                 response.ContentLength64 = buffer.Length;
                 response.OutputStream.Write(buffer, 0, buffer.Length);
                 response.OutputStream.Close();
