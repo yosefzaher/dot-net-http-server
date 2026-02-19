@@ -1,3 +1,3 @@
 #!/bin/bash
 
-systemctl start http_server
+systemctl restart http_server.service
