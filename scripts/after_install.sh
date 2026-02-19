@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# إنشاء ملف الخدمة بالمسار الجديد الصحيح
+
 cat >/etc/systemd/system/http_server.service <<EOL
 [Unit]
 Description=.NET HTTP Server Work on Port 8002
