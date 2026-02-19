@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export DOTNET_CLI_HOME=/temp
+
 cat >/etc/systemd/system/http_server.service <<EOL
 [Unit]
 Description=.NET HTTP Server Work on Port 8002
@@ -15,3 +17,7 @@ WantedBy=multi-user.target
 EOL
 
 systemctl daemon-reload
+
+systemctl enable http_server.service
+
+systemctl restart http_server.service
