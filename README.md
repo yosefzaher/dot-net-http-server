@@ -15,7 +15,7 @@ This project implements a minimal HTTP listener service built with C# and .NET 8
 
 ## 📐 Architecture
 
-![Architecture Diagram](./images/diagram.png)
+![Architecture Diagram](./CI_CD_Project_Design.drawio.png)
 
 ### Deployment Flow
 
